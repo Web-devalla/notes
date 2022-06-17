@@ -1,0 +1,144 @@
+@import url(https://fonts.googleapis.com/css?family=Reenie+Beanie:regular);
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper{
+    margin: 20px auto;
+    width: 70%;
+    /*font-family: 'Lato', cursive;*/
+    padding: 15px;
+    background: #064819;
+    color: #000;
+    min-height: ;
+}
+h1 {
+    text-align: center;
+    display: block;
+    max-width: 90%;
+    font-size: 50px;
+    margin: 20px auto;
+    padding: 20px 0 20px 0;
+    box-shadow: 5px 5px 15px 7px #000000;
+}
+
+p{
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 30px;
+}
+
+ul li{
+    list-style: none;
+    position: relative;
+}
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.link {
+    text-decoration: none;
+    color: #000;
+    background: #DAE339;
+    display: block;
+    height: 160px;
+    width: 160px;
+    overflow: auto;
+    padding: 15px;
+    padding-top: 35px;
+    box-shadow: 5px 5px 7px rgba(33, 33, 33, .7);
+    transition: transform .15s linear;
+}
+
+ul li {
+    margin: 15px;
+}
+
+ul li:nth-child(odd) a{
+    transform:  rotate(-4deg);
+    position: relative;
+    top: 5px;
+}
+
+ul li:nth-child(even) a {
+    transform:  rotate(4deg);
+    position: relative;
+    top: 5px;
+}
+
+ul li:nth-child(3n) a{
+    transform:  rotate(-3deg);
+    position: relative;
+    top: -5px;
+}
+
+ul li:nth-child(5n) a{
+    transform:  rotate(5deg);
+    position: relative;
+    top: -10px;
+}
+
+.link:hover, .link:focus {
+    box-shadow: 10px 10px 7px rgba(0, 0, 0, .7);
+    transform: scale(1.25);
+    position: relative;
+    z-index: 5;
+}
+
+ul li:nth-child(even) a{
+    position: relative;
+    top: 5px;
+    background: #D6628B;
+}
+
+ul li:nth-child(3n) a{
+    position: relative;
+    top: -5px;
+    background: #ccf;
+}
+
+
+.button a{
+    text-decoration: none;
+    display: block;
+    color: #000;
+}
+
+
+.close {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 20px;
+	height: 20px;
+	opacity: 0.2;
+	cursor: pointer;
+    transition: opacity ease 0.5s;
+}
+
+.close:hover {
+    opacity: 1;
+}
+
+.close::before,
+.close::after {
+	content: '';
+	position: absolute;
+	top: 10px;
+	display: block;
+	width: 20px;
+	height: 3px;
+	background: #000;
+}
+
+.close::before {
+	transform: rotate(45deg);
+}
+
+.close::after {
+	transform: rotate(-45deg);
+}
